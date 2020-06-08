@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <title>Development Portfolio of Ryan Billings</title>
 </head>
 <body>
-    <h1>Hi, I'm Ryan</h1>
-    <p>I'm a programmer from Maine. I am an experienced game developer and junior fullstack web developer.</p>
-    <p>I graduated from the University of Maine in 2015 and have been coding nonstop since.</p>
-    <p>I also work with high-school age students to get them interested in computer science.</p>
-    <p>I am currently available for development opportunities.</p>
-    <p><a href="mailto: ryankbillings@gmail.com?subject=Portfolio Inquiry">Contact Me</a></p>
-    <h2>Commercial Projects</h2>
-    <div class="project-preview" id="glitch-strike">
-        <p>Glitch Strike - Developed in Unity (C#)</p>
-        <iframe src="https://itch.io/embed/542801" height="167" width="552" frameborder="0"><a href="https://corriveaugames.itch.io/glitch-strike">Glitch Strike by corriveaugames</a></iframe>
+    <div class="container-fluid">
+    <div class="intro">
+        <h1>Hi, I'm Ryan</h1>
+        <p>I'm a programmer from Maine. I am an experienced game developer and junior fullstack web developer.</p>
+        <p>I graduated from the University of Maine in 2015 and have been coding nonstop since.</p>
+        <p>I also work with high-school age students to get them interested in computer science.</p>
+        <p>I am currently available for development opportunities.</p>
+        <p><a href="mailto: ryankbillings@gmail.com?subject=Portfolio Inquiry">Contact Me</a></p>
     </div>
-    <h2>Web Development Projects</h2>
-    <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-        <p>Anonymous Message Board</p>
-        <iframe
-        src="https://glitch.com/embed/#!/embed/anon-board-rb?path=server.js&previewSize=100&attributionHidden=true"
-        title="anon-board-rb on Glitch"
-        allow="geolocation; microphone; camera; midi; vr; encrypted-media"
-        style="height: 80%; width: 100%; border: 0;">
-        </iframe>
-        <p>Fullstack - made with Node, Express, and MongoDB</p>
-    </div>
-    <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-        <p>Development Issue Tracker</p>
-        <iframe
-        src="https://glitch.com/embed/#!/embed/issue-tracker-rb?path=README.md&previewSize=100&attributionHidden=true"
-        title="issue-tracker-rb on Glitch"
-        allow="geolocation; microphone; camera; midi; vr; encrypted-media"
-        style="height: 80%; width: 100%; border: 0;">
-        </iframe>
-        <p>Fullstack - made with Node, Express, and MongoDB</p>
-    </div>
-    <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-        <p>Metric-Imperial Converter</p>
-        <iframe
-        src="https://glitch.com/embed/#!/embed/imp-met-rb?path=README.md&previewSize=100&attributionHidden=true"
-        title="imp-met-rb on Glitch"
-        allow="geolocation; microphone; camera; midi; vr; encrypted-media"
-        style="height: 80%; width: 100%; border: 0;">
-        </iframe>
-        <p>Microservice - made with Node and Express</p>
-    </div>
-    <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-        <p>URL Shortener</p>
-        <iframe
-        src="https://glitch.com/embed/#!/embed/url-short-rb?path=README.md&previewSize=100&attributionHidden=true"
-        title="url-short-rb on Glitch"
-        allow="geolocation; microphone; camera; midi; vr; encrypted-media"
-        style="height: 80%; width: 100%; border: 0;">
-        </iframe>
-        <p>Microservice - made with Node, Express and MongoDB</p>
+    <div class="projects">
+        <h2 id="commercial">Commercial Projects</h2>
+        <div class="project-preview" id="comProject">
+            <p>Glitch Strike - Developed in Unity (C#)</p>
+            <iframe src="https://itch.io/embed/542801"><a href="https://corriveaugames.itch.io/glitch-strike">Glitch Strike by corriveaugames</a></iframe>
+        </div>
+        <h2 id="development">Web Development Projects</h2>
+        <div class="project-preview" id="webProject">
+            <p>Anonymous Message Board</p>
+            <iframe
+            src="https://glitch.com/embed/#!/embed/anon-board-rb?path=server.js&previewSize=100&attributionHidden=true"
+            title="anon-board-rb on Glitch"
+            allow="geolocation; microphone; camera; midi; vr; encrypted-media">
+            </iframe>
+            <p>Fullstack - made with Node, Express, and MongoDB</p>
+        </div>
+        <div class="project-preview" id="webProject">
+            <p>Development Issue Tracker</p>
+            <iframe
+            src="https://glitch.com/embed/#!/embed/issue-tracker-rb?path=README.md&previewSize=100&attributionHidden=true"
+            title="issue-tracker-rb on Glitch"
+            allow="geolocation; microphone; camera; midi; vr; encrypted-media">
+            </iframe>
+            <p>Fullstack - made with Node, Express, and MongoDB</p>
+        </div>
+        <div class="project-preview" id="webProject">
+            <p>Metric-Imperial Converter</p>
+            <iframe
+            src="https://glitch.com/embed/#!/embed/imp-met-rb?path=README.md&previewSize=100&attributionHidden=true"
+            title="imp-met-rb on Glitch"
+            allow="geolocation; microphone; camera; midi; vr; encrypted-media">
+            </iframe>
+            <p>Microservice - made with Node and Express</p>
+        </div>
+        <div class="project-preview" id="webProject">
+            <p>URL Shortener</p>
+            <iframe
+            src="https://glitch.com/embed/#!/embed/url-short-rb?path=README.md&previewSize=100&attributionHidden=true"
+            title="url-short-rb on Glitch"
+            allow="geolocation; microphone; camera; midi; vr; encrypted-media">
+            </iframe>
+            <p>Microservice - made with Node, Express and MongoDB</p>
+        </div>
     </div>
     <div class="contact-form">
+        <div class="column">
         <h2>Contact Me</h2>
         <form action="mailto:ryankbillings@gmail.com?subject=Portfolio Inquiry" method="post" enctype="multipart/form-data">
-            Your Name:
-            <input type="text" name="name">
-            Your E-mail:
-            <input type="text" name="e-mail">
-            Message:
-            <input type="text" name="message">
-            <input type="submit" value="Submit">
+            <input class="form-control" type="text" name="name" placeholder="Name:">
+            <input class="form-control" type="text" name="e-mail" placeholder="E-mail:">
+            <textarea class="form-control" id="comments" rows=4 cols=40 placeholder="Message:"></textarea>
+            <input class="btn btn-primary" type="submit" value="Submit">
         </form>
+        </div>
     </div>
     <div class="copyright">
         <p3>Copyright 2020 Ryan Billings</p3>
     </div>
+</div>
 </body>
 </html>
