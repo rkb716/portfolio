@@ -9,54 +9,58 @@
     <div class="container-fluid">
     <div class="intro">
         <h1>Hi, I'm Ryan</h1>
+    </div>
+    <div class="bio">
+        <div class="text-box">
         <p>I'm a programmer from Maine. I am an experienced game developer and junior fullstack web developer.</p>
-        <p>I graduated from the University of Maine in 2015 and have been coding nonstop since.</p>
-        <p>I also work with high-school age students to get them interested in computer science.</p>
+        <p>I graduated from the University of Maine in 2015 and have been coding nonstop since. Immediately after graduation I started a game development studio, and balanced my time between development and working with high-school age students to increase their interest in computer science. Recently I have been focused on web development and web app security.</p>
         <p>I am currently available for development opportunities.</p>
         <p><a href="mailto: ryankbillings@gmail.com?subject=Portfolio Inquiry">Contact Me</a></p>
+        </div>
     </div>
     <div class="projects">
         <h2 id="commercial">Commercial Projects</h2>
-        <div class="project-preview" id="comProject">
-            <p>Glitch Strike - Developed in Unity (C#)</p>
-            <iframe src="https://itch.io/embed/542801"><a href="https://corriveaugames.itch.io/glitch-strike">Glitch Strike by corriveaugames</a></iframe>
+        <div class="commercial-projects">
+            <div class="project-preview" id="comProject">
+                <p>Glitch Strike - Developed in Unity (C#)</p>
+                <iframe class="border-override" src="https://itch.io/embed/542801"
+                title="glitch-strike on Itch.io"><a href="https://corriveaugames.itch.io/glitch-strike">Glitch Strike by corriveaugames</a></iframe>
+            </div>
         </div>
         <h2 id="development">Web Development Projects</h2>
-        <div class="project-preview" id="webProject">
-            <p>Anonymous Message Board</p>
-            <iframe
-            src="https://glitch.com/embed/#!/embed/anon-board-rb?path=server.js&previewSize=100&attributionHidden=true"
-            title="anon-board-rb on Glitch"
-            allow="geolocation; microphone; camera; midi; vr; encrypted-media">
-            </iframe>
-            <p>Fullstack - made with Node, Express, and MongoDB</p>
-        </div>
-        <div class="project-preview" id="webProject">
-            <p>Development Issue Tracker</p>
-            <iframe
-            src="https://glitch.com/embed/#!/embed/issue-tracker-rb?path=README.md&previewSize=100&attributionHidden=true"
-            title="issue-tracker-rb on Glitch"
-            allow="geolocation; microphone; camera; midi; vr; encrypted-media">
-            </iframe>
-            <p>Fullstack - made with Node, Express, and MongoDB</p>
-        </div>
-        <div class="project-preview" id="webProject">
-            <p>Metric-Imperial Converter</p>
-            <iframe
-            src="https://glitch.com/embed/#!/embed/imp-met-rb?path=README.md&previewSize=100&attributionHidden=true"
-            title="imp-met-rb on Glitch"
-            allow="geolocation; microphone; camera; midi; vr; encrypted-media">
-            </iframe>
-            <p>Microservice - made with Node and Express</p>
-        </div>
-        <div class="project-preview" id="webProject">
-            <p>URL Shortener</p>
-            <iframe
-            src="https://glitch.com/embed/#!/embed/url-short-rb?path=README.md&previewSize=100&attributionHidden=true"
-            title="url-short-rb on Glitch"
-            allow="geolocation; microphone; camera; midi; vr; encrypted-media">
-            </iframe>
-            <p>Microservice - made with Node, Express and MongoDB</p>
+        <div class="web-projects">
+            <div class="project-preview" id="webProject">
+                <p>Anonymous Message Board</p>
+                <iframe
+                src="https://glitch.com/embed/#!/embed/anon-board-rb?path=server.js&previewSize=100&attributionHidden=true"
+                title="anon-board-rb on Glitch">
+                </iframe>
+                <p>Fullstack - made with Node, Express, and MongoDB</p>
+            </div>
+            <div class="project-preview" id="webProject">
+                <p>Development Issue Tracker</p>
+                <iframe
+                src="https://glitch.com/embed/#!/embed/issue-tracker-rb?path=README.md&previewSize=100&attributionHidden=true"
+                title="issue-tracker-rb on Glitch">
+                </iframe>
+                <p>Fullstack - made with Node, Express, and MongoDB</p>
+            </div>
+            <div class="project-preview" id="webProject">
+                <p>Metric-Imperial Converter</p>
+                <iframe
+                src="https://glitch.com/embed/#!/embed/imp-met-rb?path=README.md&previewSize=100&attributionHidden=true"
+                title="imp-met-rb on Glitch">
+                </iframe>
+                <p>Microservice - made with Node and Express</p>
+            </div>
+            <div class="project-preview" id="webProject">
+                <p>URL Shortener</p>
+                <iframe
+                src="https://glitch.com/embed/#!/embed/url-short-rb?path=README.md&previewSize=100&attributionHidden=true"
+                title="url-short-rb on Glitch">
+                </iframe>
+                <p>Microservice - made with Node, Express and MongoDB</p>
+            </div>
         </div>
     </div>
     <div class="contact-form">
@@ -65,7 +69,7 @@
         <form action="mailto:ryankbillings@gmail.com?subject=Portfolio Inquiry" method="post" enctype="multipart/form-data">
             <input class="form-control" type="text" name="name" placeholder="Name:">
             <input class="form-control" type="text" name="e-mail" placeholder="E-mail:">
-            <textarea class="form-control" id="comments" rows=4 cols=40 placeholder="Message:"></textarea>
+            <textarea class="form-control" name="message" id="comments" rows=4 cols=40 placeholder="Message:"></textarea>
             <input class="btn btn-primary" type="submit" value="Submit">
         </form>
         </div>
