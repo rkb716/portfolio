@@ -12,7 +12,7 @@
     </div>
     <div class="bio">
         <div class="text-box">
-        <p>I'm a programmer from Maine. I am an experienced game developer and junior fullstack web developer.</p>
+        <p>I'm an experienced game developer and junior fullstack web developer from Maine.</p>
         <p>I graduated from the University of Maine in 2015 and have been coding nonstop since. Immediately after graduation I started a game development studio, and balanced my time between development and working with high-school age students to increase their interest in computer science. Recently I have been focused on web development and web app security.</p>
         <p>I am currently available for development opportunities.</p>
         <p><a href="mailto: ryankbillings@gmail.com?subject=Portfolio Inquiry">Contact Me</a></p>
@@ -22,7 +22,7 @@
         <h2 id="commercial">Commercial Projects</h2>
         <div class="commercial-projects">
             <div class="project-preview" id="comProject">
-                <p>Glitch Strike - Developed in Unity (C#)</p>
+                <h4>Glitch Strike - Developed in Unity for Windows and Android</h4>
                 <iframe class="border-override" src="https://itch.io/embed/542801"
                 title="glitch-strike on Itch.io"><a href="https://corriveaugames.itch.io/glitch-strike">Glitch Strike by corriveaugames</a></iframe>
             </div>
@@ -30,15 +30,15 @@
         <h2 id="development">Web Development Projects</h2>
         <div class="web-projects">
             <div class="project-preview" id="webProject">
-                <p>Anonymous Message Board</p>
-                <iframe
-                src="https://glitch.com/embed/#!/embed/anon-board-rb?path=server.js&previewSize=100&attributionHidden=true"
+                <h4>Anonymous Message Board</h4>
+                <iframe class="glitch-preview"
+                src="https://glitch.com/embed/#!/embed/anon-board-rb?path=server.js&previewSize=80&attributionHidden=true"
                 title="anon-board-rb on Glitch">
                 </iframe>
                 <p>Fullstack - made with Node, Express, and MongoDB</p>
             </div>
             <div class="project-preview" id="webProject">
-                <p>Development Issue Tracker</p>
+                <h4>Development Issue Tracker</h4>
                 <iframe
                 src="https://glitch.com/embed/#!/embed/issue-tracker-rb?path=README.md&previewSize=100&attributionHidden=true"
                 title="issue-tracker-rb on Glitch">
@@ -46,7 +46,7 @@
                 <p>Fullstack - made with Node, Express, and MongoDB</p>
             </div>
             <div class="project-preview" id="webProject">
-                <p>Metric-Imperial Converter</p>
+                <h4>Metric-Imperial Converter</h4>
                 <iframe
                 src="https://glitch.com/embed/#!/embed/imp-met-rb?path=README.md&previewSize=100&attributionHidden=true"
                 title="imp-met-rb on Glitch">
@@ -54,7 +54,7 @@
                 <p>Microservice - made with Node and Express</p>
             </div>
             <div class="project-preview" id="webProject">
-                <p>URL Shortener</p>
+                <h4>URL Shortener</h4>
                 <iframe
                 src="https://glitch.com/embed/#!/embed/url-short-rb?path=README.md&previewSize=100&attributionHidden=true"
                 title="url-short-rb on Glitch">
@@ -67,10 +67,10 @@
         <div class="column">
         <h2>Contact Me</h2>
         <form action="mailto:ryankbillings@gmail.com?subject=Portfolio Inquiry" method="post" enctype="multipart/form-data">
-            <input class="form-control" type="text" name="name" placeholder="Name:">
-            <input class="form-control" type="text" name="e-mail" placeholder="E-mail:">
-            <textarea class="form-control" name="message" id="comments" rows=4 cols=40 placeholder="Message:"></textarea>
-            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="form-control custom-input" type="text" name="name" placeholder="Name:" required>
+            <input class="form-control custom-input" type="text" name="e-mail" placeholder="E-mail:" required>
+            <textarea class="form-control custom-input" name="message" id="comments" rows=4 cols=40 placeholder="Message:" required></textarea>
+            <input class="btn send-btn" type="submit" value="Send">
         </form>
         </div>
     </div>

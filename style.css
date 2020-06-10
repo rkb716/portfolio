@@ -1,18 +1,24 @@
+:root {
+    --dark-color: #17183B;
+    --medium-color: #587792;
+    --light-color: #B7D5D4;
+}
+
 body {
-    margin: 20px auto;
+    background-color: var(--light-color)!important;
 }
 
 .intro {
-    margin: auto;
-    width: 80%;
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--dark-color);
 }
 
 .bio {
-    margin: auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +27,8 @@ body {
 
 .bio .text-box {
     border: 1px solid rgb(0,0,0,.2);
-    width: 60vh;
+    width: 60vw;
+    max-width: 800px;
     height: auto;
     border-radius: 2% 2%;
     box-shadow: 2px 2px rgb(0,0,0,.25);
@@ -30,6 +37,12 @@ body {
 .bio .text-box p {
     padding-left: 5px;
     padding-right: 5px;
+    color: var(--dark-color);
+}
+
+.bio .text-box a {
+    text-decoration: none;
+    color: var(--medium-color);
 }
 
 .projects {
@@ -40,11 +53,17 @@ body {
 
 .projects h2 {
     text-align: center;
+    color: var(--dark-color);
+}
+
+.projects p {
+    color: var(--dark-color);
 }
 
 .projects #comProject {
     margin: auto;
-    width: 65%;
+    width: 60vw;
+    max-width: 800px;
 }
 
 .projects .web-projects {
@@ -77,10 +96,6 @@ iframe {
     box-shadow: 4px 4px rgb(0,0,0,.25);
 }
 
-a {
-    text-decoration: none;
-}
-
 .contact-form {
     margin: auto;
     width: 45%;
@@ -91,4 +106,30 @@ a {
     flex-wrap: wrap;
     text-align: center;
     padding-top: 20px;
+}
+
+.contact-form h2 {
+    color: var(--dark-color);
+}
+
+.contact-form .custom-input {
+    margin: 4px 0;
+    border-color:var(--medium-color);
+    color: var(--dark-color);
+}
+
+.contact-form .custom-input::placeholder {
+    color: var(--dark-color);
+    opacity: 50%;
+}
+
+.send-btn {
+    width: 100px;
+    background-color: var(--medium-color);
+    color: var(--light-color);
+    float: right;
+}
+
+.send-btn:hover {
+    color: var(--dark-color);
 }
