@@ -107,7 +107,14 @@ body {
 iframe {
     width: 100%;
     height: 80%;
-    border: 0;
+    border: 2px solid var(--back-color-dark);
+}
+
+img {
+    width: 100%;
+    height: 80%;
+    border: 2px solid var(--back-color-dark);
+    margin-bottom: 5px;
 }
 
 .web-projects .project-preview {
