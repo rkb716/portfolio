@@ -142,6 +142,7 @@ img {
     animation-duration: .3s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+    background-image: url("https://rkb716.github.io/portfolio/choropleth.PNG");
 }
 
 .link-preview:hover > .btn {
