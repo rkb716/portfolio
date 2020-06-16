@@ -1,7 +1,6 @@
 var canvas, ctx, rect;
 var offsetX = 0;
 var offsetY = 0;
-var ballRadius = 5;
 const m = {
     x: 0,
     y: 0
@@ -30,7 +29,7 @@ function init() {
         if(Math.random() < 0.5) {
             velY *= -1;
         }
-        balls.push(new Ball(canvas.width * Math.random(), canvas.height * Math.random(), ballRadius, velX, velY));
+        balls.push(new Ball(canvas.width * Math.random(), canvas.height * Math.random(), 3 + (Math.random() * 4), velX, velY));
     }
     window.requestAnimationFrame(draw);
 }
@@ -86,7 +85,7 @@ class Ball {
         if((this.y <= floor && this.vy < 0) || (this.y >= ceilY && this.vy > 0)) {
             this.vy *= -1;
         }
-        if(isMouseCollision(this.x,this.y)) {
+        if(isMouseCollision(this.x,this.y, this.r)) {
             if((this.x < m.x && this.vx > 0) || this.x > m.x && this.vx < 0) {
                 this.vx *= -1;
             }
@@ -97,11 +96,11 @@ class Ball {
     }
 }
 
-function isMouseCollision(x, y) {
+function isMouseCollision(x, y, r) {
     let a = x - m.x;
     let b = y - m.y;
     let dist = Math.sqrt((a*a) + (b*b));
-    return dist < (ballRadius * 2);
+    return dist < (r * 2);
 }
 
 window.onmousemove = (e) => {
