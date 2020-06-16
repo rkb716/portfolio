@@ -116,7 +116,7 @@ img {
 }
 
 .link-preview {
-    background-image: url("choropleth.PNG");
+    background-image: url("https://rkb716.github.io/portfolio/choropleth.PNG");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
