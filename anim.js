@@ -108,4 +108,4 @@ window.onmousemove = (e) => {
     m.x = (e.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
     m.y = (e.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
 }
-window.onload = init;
+document.onload = init;
