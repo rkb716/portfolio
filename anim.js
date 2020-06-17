@@ -9,8 +9,16 @@ var balls = [];
 function init() {
     console.log("init");
     canvas = document.getElementById('canvas');
+    console.log("canvas: " + canvas);
     ctx = canvas.getContext('2d');
+    console.log("ctx: " + ctx);
     rect = canvas.getBoundingClientRect();
+    console.log("rect: " + rect);
+    window.onmousemove = (e) => {
+        rect = canvas.getBoundingClientRect();
+        m.x = (e.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
+        m.y = (e.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
+    }
     ctx.canvas.width = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
     let numBalls = ctx.canvas.width * ctx.canvas.height / 50000;
@@ -103,9 +111,6 @@ function isMouseCollision(x, y, r) {
     return dist < (r * 2);
 }
 
-window.onmousemove = (e) => {
-    rect = canvas.getBoundingClientRect();
-    m.x = (e.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
-    m.y = (e.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
-}
-document.onload = init;
+document.addEventListener('DOMContentLoaded', (event) => {
+    init();
+});
