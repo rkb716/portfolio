@@ -82,9 +82,19 @@ canvas {
 .projects .web-projects {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
+@supports not (-ms-ime-align: auto) {
+    .projects .web-projects {
+      justify-content: space-evenly;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 
 .project-preview {
     width: 45%;
