@@ -79,6 +79,15 @@ canvas {
     max-width: 800px;
 }
 
+.projects .commercial-projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .projects .web-projects {
     display: flex;
     flex-flow: row wrap;
