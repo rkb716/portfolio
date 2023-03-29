@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <title>Ryan Billings</title>
     <script type="text/javascript" src="anim.js"></script>
 </head>
+
 <body>
     <div>
-    <div class="intro">
-        <canvas id="canvas" width=400 height=300></canvas>
-    </div>
-    <div class="bio">
-        <div class="text-box">
-        <p>I'm an experienced game developer and fullstack web developer from Maine.</p>
-        <p>I graduated from the University of Maine in 2015 and have been coding nonstop since. Immediately after graduation I started a game development studio, and balanced my time between development and working with high-school age students to increase their interest in computer science. Recently I have been focused on web development and information security.</p>
-        <p>I am currently available for development opportunities.</p>
+        <div class="intro">
+            <canvas id="canvas" width=400 height=300></canvas>
         </div>
-    </div>
-    <div class="projects">
-        <h2 id="commercial">Game Development</h2>
-        <div class="commercial-projects">
-            <div class="project-preview" id="comProject">
-                <h4>Glitch Strike - Developed in Unity for Windows and Android</h4>
-                <iframe class="border-override" src="https://itch.io/embed/542801"
-                title="glitch-strike on Itch.io"><a href="https://corriveaugames.itch.io/glitch-strike">Glitch Strike by corriveaugames</a></iframe>
-            </div>
-            <div class="project-preview" id="comProject">
-                <h4>RGB Defense - Developed in Unity for WebGL</h4>
-                <iframe src="https://itch.io/embed/730321" height="167" width="552" frameborder="0"><a href="https://corriveaugames.itch.io/rgb-defense">RGB Defense (Low Rez Game Jam) by corriveaugames</a></iframe>
+        <div class="bio">
+            <div class="text-box">
+                <p>I'm an experienced game developer and junior web developer from Maine.</p>
+                <p>I graduated from the University of Maine in 2015 and have been coding nonstop since. Immediately
+                    after graduation I started a game development studio, and balanced my time between development and
+                    working with high-school age students to increase their interest in computer science. Recently I
+                    have been focused on web development and data science.</p>
+                <p>I am currently available for development opportunities.</p>
             </div>
         </div>
-        <h2 id="development">Web Development</h2>
-        <div class="web-projects">
-            <div class="project-preview" id="webProject">
-                <h4>Anonymous Message Board</h4>
-                <iframe class="glitch-preview"
-                src="https://rb-anonymous-message-board.herokuapp.com/b/general/"
-                title="Anonymous Message Board on Heroku">
-                </iframe>
-                <p>Made with Node, Express, and MongoDB</p>
-                <p><a id="project-title" href="https://rb-anonymous-message-board.herokuapp.com/b/general/" target="_blank">View in new window</a></p>
-            </div>
-            <div class="project-preview" id="webProject">
-                <h4>Authentication Screen</h4>
-                <iframe
-                src="https://rb-login-page.herokuapp.com/"
-                title="Authentication Screen on Heroku">
-                </iframe>
-                <p>Made with Node, Express, MongoDB, Passport, and BCrypt</p>
-                <p><a href="https://rb-login-page.herokuapp.com/" target="_blank">View in new window</a></p>
-            </div>
-            <div class="project-preview" id="webProject">
-                <h4>Metric-Imperial Converter</h4>
-                <iframe
-                src="https://rb-imperial-metric-converter.herokuapp.com/"
-                title="Metric-Imperial Converter on Heroku">
-                </iframe>
-                <p>Made with Node and Express</p>
-                <p><a href="https://rb-imperial-metric-converter.herokuapp.com/" target="_blank">View in new window</a></p>
-            </div>
-            <div class="project-preview" id="webProject">
-                <h4>Choropleth Map Data Visualization</h4>
-                <div class="link-preview iframe-border"><div class="blackout"></div>
-                <button type="button" onclick="window.open('https://codepen.io/RRC716/full/rNOdBQE', '_blank')" class="btn">View on Codepen</button>
+        <div class="projects">
+            <h2 id="commercial">Game Development</h2>
+            <div class="web-projects">
+                <div class="project-preview" id="comProject">
+                    <h4>Glitch Strike - Developed in Unity for Windows and Android</h4>
+                    <iframe src="https://itch.io/embed/542801" title="glitch-strike on Itch.io"><a
+                            href="https://corriveaugames.itch.io/glitch-strike">Glitch
+                            Strike by corriveaugames</a></iframe>
                 </div>
-                <p>Made with D3</p>
-                <p><a href="https://codepen.io/RRC716/full/rNOdBQE" target="_blank">View in new window</a></p>
+                <div class="project-preview" id="comProject">
+                    <h4>RGB Defense - Developed in Unity for WebGL</h4>
+                    <iframe src="https://itch.io/embed/730321" title="rgb defense on Itch.io"><a href="https://corriveaugames.itch.io/rgb-defense">RGB
+                            Defense (Low Rez Game Jam) by
+                            corriveaugames</a></iframe>
+                </div>
+            </div>
+            <h2 id="development">Web Development</h2>
+            <div class="web-projects">
+                <div class="project-preview" id="webProject">
+                    <h4>Tip Calculator</h4>
+                    <div class="link-preview link-1">
+                        <button type="button"
+                            onclick="window.open('https://rkb716.github.io/tip-calculator-app-main/', '_blank')"
+                            class="btn">View app</button>
+                    </div>
+                    <p>Made with jQuery</p>
+                </div>
+                <div class="project-preview" id="webProject">
+                    <h4>Anonymous Message Board</h4>
+                    <div class="link-preview link-2">
+                        <button type="button"
+                            onclick="window.open('https://anonymous-message-board.rkb716.repl.co/b/general/', '_blank')"
+                            class="btn">View website</button>
+                    </div>
+                    <p>Made with Node, Express, MongoDB and Mongoose</p>
+                </div>
+            </div>
+            <h2 id="development">Data Science</h2>
+            <div class="web-projects">
+                <div class="project-preview" id="webProject">
+                    <h4>Choropleth Map Data Visualization</h4>
+                    <div class="link-preview link-3">
+                        <button type="button" onclick="window.open('https://codepen.io/RRC716/full/rNOdBQE', '_blank')"
+                            class="btn">View on Codepen</button>
+                    </div>
+                    <p>Made with d3.js</p>
+                </div>
+                <div class="project-preview" id="webProject">
+                    <h4>Neural Network Image Classifier</h4>
+                    <div class="link-preview link-4">
+                        <button type="button"
+                            onclick="window.open('https://colab.research.google.com/drive/1QO5hvLJFbwwLBzh-yE_mGx3JxP0sDhSq?usp=sharing', '_blank')"
+                            class="btn">View on Google Collaboratory</button>
+                    </div>
+                    <p>Made with TensorFlow</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="contact-form">
-        <h2>Contact Me</h2>
-        <div class="column">
-        <form action="mailto:ryankbillings@gmail.com?subject=Portfolio Inquiry" method="post" enctype="multipart/form-data">
-            <input class="form-control custom-input" type="text" name="name" placeholder="Name:" required>
-            <input class="form-control custom-input" type="text" name="e-mail" placeholder="E-mail:" required>
-            <textarea class="form-control custom-input" name="message" id="comments" rows=4 cols=40 placeholder="Message:" required></textarea>
-            <input class="btn send-btn" type="submit" value="Send">
-        </form>
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <div class="column">
+                <form action="mailto:ryankbillings@gmail.com?subject=Portfolio Inquiry" method="post"
+                    enctype="multipart/form-data">
+                    <input class="form-control custom-input" type="text" name="name" placeholder="Name:" required>
+                    <input class="form-control custom-input" type="text" name="e-mail" placeholder="E-mail:" required>
+                    <textarea class="form-control custom-input" name="message" id="comments" rows=4 cols=40
+                        placeholder="Message:" required></textarea>
+                    <input class="btn send-btn" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p3>Copyright 2020 Ryan Billings</p3>
         </div>
     </div>
-    <div class="copyright">
-        <p3>Copyright 2020 Ryan Billings</p3>
-    </div>
-</div>
 </body>
+
 </html>
