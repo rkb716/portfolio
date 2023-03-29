@@ -167,45 +167,40 @@ img {
     opacity: 1;
 }
 
-
-.column {
+.links {
     margin: auto;
     width: 45%;
     max-width: 500px;
     height: auto;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: center;
     padding-top: 20px;
 }
 
-.contact-form h2 {
+.links-header {
     color: var(--text-color-light);
     background-color: var(--back-color-dark);
     text-align: center;
 }
 
-.column .custom-input {
-    margin: 4px 0;
-    border-color: var(--back-color-dark);
-    color: var(--text-color-dark);
+.links a {
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
 }
 
-.column .custom-input::placeholder {
-    color: var(--text-color-dark);
-    opacity: 50%;
-}
-
-.send-btn {
-    width: 100px;
+.links a:hover {
     background-color: var(--back-color-dark);
     color: var(--text-color-light);
-    float: right;
+    text-decoration: none;
 }
 
-.send-btn:hover {
-    color: var(--text-color-dark)!important;
+.links a svg {
+    width: 1em;
+    height: 1em;
 }
 
 .copyright {
