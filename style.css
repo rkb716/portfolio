@@ -79,16 +79,7 @@ canvas {
     max-width: 800px;
 }
 
-.projects .commercial-projects {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.projects .web-projects {
+.projects .container-projects {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -98,7 +89,7 @@ canvas {
 }
 
 @supports not (-ms-ime-align: auto) {
-    .projects .web-projects {
+    .projects .container-projects {
       justify-content: space-evenly;
       margin-left: 0;
       margin-right: 0;
@@ -126,7 +117,7 @@ img {
     margin-bottom: 5px;
 }
 
-.web-projects .project-preview {
+.container-projects .project-preview {
     height: 50vh;
 }
 
@@ -223,7 +214,7 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
-    .projects .web-projects {
+    .projects .container-projects {
         flex-direction: column;
     }
     .project-preview {
