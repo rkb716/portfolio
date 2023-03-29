@@ -110,13 +110,6 @@ iframe {
     border: 2px solid var(--back-color-dark);
 }
 
-img {
-    width: 100%;
-    height: 80%;
-    border: 2px solid var(--back-color-dark);
-    margin-bottom: 5px;
-}
-
 .container-projects .project-preview {
     height: 50vh;
 }
@@ -196,11 +189,6 @@ img {
     background-color: var(--back-color-dark);
     color: var(--text-color-light);
     text-decoration: none;
-}
-
-.links a svg {
-    width: 1em;
-    height: 1em;
 }
 
 .copyright {
